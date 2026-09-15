@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#04070c"><title>北京·印象·JessyJang</title><link rel="stylesheet" href="/src/style.css"><script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js"}}</script></head><body>
+<main id="world" role="img" aria-label="北京·印象·JessyJang：古今建筑与北京生活的星空粒子影像"></main>
+<header class="signature" aria-label="北京·印象·JessyJang"><span class="signature-city">北京<span class="dot">·</span>印象</span><span class="dot">·</span><span class="signature-author">JessyJang</span></header>
+<div class="loading-screen" id="loading-screen" aria-label="正在加载北京印象">
+ <div class="loading-poem"><div class="loading-progress" id="loading-progress" role="progressbar" aria-label="场景加载进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="loading-track"><i></i></div></div></div>
+ <div id="status" role="status">正在显影…</div>
+</div>
+<script type="module">await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));import('/src/main.js').catch(e=>{document.body.classList.add('load-error');document.querySelector('#loading-screen').removeAttribute('aria-hidden');document.querySelector('#status').hidden=false;document.querySelector('#status').textContent='画面加载失败，请刷新重试。';console.error(e)});</script></body></html>

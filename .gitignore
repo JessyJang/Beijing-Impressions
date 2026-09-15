@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+*.log
+public/assets/private/
+
+# Local reference material and iteration history (preserved on disk).
+references/
+archive/
+visual-development/
+output/
+tmp/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc

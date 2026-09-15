@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>云房间 · 粒子效果试片</title><link rel="stylesheet" href="./style.css"><script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js"}}</script></head>
+<body><div id="viewport"></div><header><span>好天气回收站 <i>/</i> 效果试片 01</span><span id="count">正在采样画面</span></header>
+<div id="error" role="status">正在载入云房间…</div>
+<footer><div class="info"><span id="phase">清晰</span><span id="time">00.0 / 26s</span></div><input id="timeline" type="range" min="0" max="26" value="0" step="0.01" aria-label="效果时间线"><div class="marks"><span>清晰</span><span>颗粒显露</span><span>波动扫过</span><span>向门内拉伸</span><span>恢复</span></div><div class="controls"><button id="play" aria-pressed="false">暂停</button><button id="restart">重播 ↺</button><label>强度 <input id="strength" type="range" min="0.3" max="1.5" value="1" step="0.05"></label><span class="note">二维图像采样 · 形变效果验证 · 非 3DGS</span></div></footer>
+<script type="module">import('./main.js').catch(e=>{const x=document.querySelector('#error');x.hidden=false;x.textContent='试片未能启动：'+e.message;console.error(e)})</script></body></html>

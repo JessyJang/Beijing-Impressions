@@ -1,0 +1,13 @@
+{
+  "name": "spatial-exploration-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check src/main.js && node --check src/memory-scenes.js && node --check src/atmosphere.js && node --check src/particle-timeline.js && node --check src/life.js && node --check src/point-surfaces.js && node --check src/landmarks.js && node --check scripts/serve.mjs && node --check src/spatial-route.js && node --check src/spatial-models.js && node --check src/scene-fragments.js && node --check src/particle-noise.js && node --check src/shot-transition.js && node --check src/foreground-motes.js && node --check src/cosmic-light.js && node --check src/distant-context.js && node --check src/courtyard-environment.js && node --check src/scene-environments.js && node --check src/cosmic-backdrop.js && node --check src/particle-fields.js && node --check src/editorial-frame.js && node --check src/city-life.js && node --check src/film-rhythm.js && node --check src/film-audio.js && node --check src/loading-art.js && node --check src/loading-painter.js && node --check src/point-budget.js && node --check src/winter-finale.js && node --check src/film-edit.js && node --check src/winter-route.js && node --check src/passage-space.js"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  }
+}
